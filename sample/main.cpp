@@ -32,8 +32,6 @@ public:
 
     SBObject            ninja;
     GLuint              ninjaTex[1];
-	
-	GLuint 				iitTex[2];
 
 };
 
