@@ -26,13 +26,10 @@ public:
     GLint normalLoc;
     GLint texcoordLoc;
     GLint texUnitLoc;
-
     GLfloat yaw;
     GLfloat pitch;
-
     SBObject            ninja;
     GLuint              ninjaTex[1];
-
 };
 
 class esContext
@@ -182,7 +179,7 @@ bool LoadTexture(esContext &  tx)
 	if(fread(pBits, 1, lBitSize, pFile) != lBitSize)
 	{
 		free(pBits);
-		pBits = NULL;
+		pBits = NULL; // maybe delete?
 	}
 
 	fclose(pFile);
